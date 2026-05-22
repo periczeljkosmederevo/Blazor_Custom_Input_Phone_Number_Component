@@ -9,7 +9,7 @@ public partial class Home
 
     override protected void OnInitialized()
     {
-        
+
     }
 
     public void OnSubmit(EditContext ec)

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 
 namespace PhoneNumberComponentLibrary;
+
 public enum ContinentEnum
 {
     [Description("Africa")]

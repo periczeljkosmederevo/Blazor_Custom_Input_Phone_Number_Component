@@ -1,7 +1,7 @@
-﻿using System.Diagnostics.Metrics;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 
 namespace PhoneNumberComponentLibrary;
+
 public partial class PhoneNumberInput : ComponentBase
 {
     #region Continent Select
@@ -16,7 +16,7 @@ public partial class PhoneNumberInput : ComponentBase
 
     private async Task OnContinentSelect(ContinentEnum? continent)
     {
-        if(SelectedContinent != continent)
+        if (SelectedContinent != continent)
         {
             SelectedContinent = continent;
 
