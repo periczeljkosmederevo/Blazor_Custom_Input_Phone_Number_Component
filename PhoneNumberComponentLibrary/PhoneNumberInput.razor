@@ -1,0 +1,75 @@
+﻿<div class="input-group">
+    @if (IncludeCountrySelect)
+    {
+        @if (IncludeContinentSelect)
+        {
+            <!-- Dropdown for selecting Continent -->
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle @Border"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false" 
+                        style="min-width: 10rem !important;">
+                    @if (SelectedContinent != null)
+                    {
+                        @SelectedContinent.GetDescription()
+                    }
+                    else
+                    {
+                        <span>Select Continent</span>
+                    }
+                </button>
+                <ul class="dropdown-menu">
+                    @foreach (var continent in Enum.GetValues(typeof(ContinentEnum)).Cast<ContinentEnum>())
+                    {
+                        <li>
+                            <a class="dropdown-item"
+                               href="#" @onclick="() => OnContinentSelect(continent)">
+                                @continent.GetDescription()
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        }
+
+        <!-- Dropdown for selecting Country based on Continent -->
+        <div class="dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle @Border"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="min-width: 10rem !important;">
+                @if (SelectedCountry != null)
+                {
+                    @SelectedCountry.CountryName
+                }
+                else
+                {
+                    <span>Select Country</span>
+                }
+            </button>
+            <ul class="dropdown-menu">
+                @foreach (var country in FilteredCountries)
+                {
+                    <li>
+                        <a class="dropdown-item" 
+                           href="#" @onclick="() => OnCountrySelect(country)">
+                            @country.CountryName (@country.CountryCallCode)
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+
+    <!-- Input for entering the phone number -->
+    <input id="phone-number"
+           type="tel"
+           class="form-control @Border" 
+           placeholder="@(RequiredPlaceholder ? RequiredValueValidationMessage : Placeholder)"
+           autocomplete="@AutoComplete"
+           value="@PhoneNumber"
+           required="@ShowStandardRequiredMessage"
+           @onchange="OnPhoneNumberChange" />
+</div>

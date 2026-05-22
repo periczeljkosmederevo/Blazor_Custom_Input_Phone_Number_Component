@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneNumberComponentLibrary", "PhoneNumberComponentLibrary\PhoneNumberComponentLibrary.csproj", "{3C1EC114-0AAF-4D77-A7AC-C6DEB4820C57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneNumberComponentTestApp", "PhoneNumberComponentTestApp\PhoneNumberComponentTestApp.csproj", "{B28CD0E5-D741-4F39-A4D5-1F8F91EA3B12}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3C1EC114-0AAF-4D77-A7AC-C6DEB4820C57} = {3C1EC114-0AAF-4D77-A7AC-C6DEB4820C57}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C1EC114-0AAF-4D77-A7AC-C6DEB4820C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1EC114-0AAF-4D77-A7AC-C6DEB4820C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1EC114-0AAF-4D77-A7AC-C6DEB4820C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1EC114-0AAF-4D77-A7AC-C6DEB4820C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B28CD0E5-D741-4F39-A4D5-1F8F91EA3B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28CD0E5-D741-4F39-A4D5-1F8F91EA3B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28CD0E5-D741-4F39-A4D5-1F8F91EA3B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28CD0E5-D741-4F39-A4D5-1F8F91EA3B12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDB76C68-59D0-40C7-B48F-B06D2B8D7B36}
+	EndGlobalSection
+EndGlobal
