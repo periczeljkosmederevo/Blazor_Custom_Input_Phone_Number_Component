@@ -16,6 +16,13 @@
 		<Title>Custom Blazor Phone Number Input Component</Title>
 		<PackageProjectUrl>https://github.com/periczeljkosmederevo/Blazor_Custom_Input_Phone_Number_Component</PackageProjectUrl>
 		<PackageIcon>TM 500.png</PackageIcon>
+
+		<RepositoryUrl>https://github.com/periczeljkosmederevo/Blazor_Custom_Input_Phone_Number_Component</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+
+		<PackageProjectUrl>https://github.com/periczeljkosmederevo/Blazor_Custom_Input_Phone_Number_Component</PackageProjectUrl>
+
+		<PackageReleaseNotes>Initial release of the Blazor Phone Number Input component with continent and country filtering features.</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
