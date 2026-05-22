@@ -16,8 +16,9 @@ making data entry simpler and more intuitive for end users.
 
 To use the component, add a reference to the `PhoneNumberComponentLibrary` and ensure Bootstrap 5 CSS/JS is loaded in your application.
 
+
 ### Usage Example
-```razor
+
 <PhoneNumberInput 
     @bind-PhoneNumber="userPhone" 
     @bind-SelectedCountry="userCountry"
