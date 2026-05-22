@@ -5,8 +5,8 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>PhoneNumberInput.Blazor</PackageId>
-		<Version>1.0.0.0</Version>
-		<FileVersion>1.0.0.0</FileVersion>
+		<Version>1.0.0</Version>
+		<FileVersion>1.0.0</FileVersion>
 		<Authors>Perić Željko, periczeljkosmederevo@yahoo.com</Authors>
 		<Company>periczeljkosmederevo@yahoo.com</Company>
 		<Description>Reusable Blazor component for phone number input with continent/country filtering.</Description>
