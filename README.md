@@ -26,8 +26,8 @@ To use the component, add a reference to the `PhoneNumberComponentLibrary` and e
     IsRequired="true" />
 ```
 
-![Opis komponente](Screenshots/screenshot 1.png)
-![Opis komponente](Screenshots/screenshot 2.png)
+![Screenshot 1](Screenshots/screenshot_1.png)
+![Screenshot 2](Screenshots/screenshot_2.png)
 
 ### Component Parameters
 The component supports the following configuration parameters:
