@@ -18,12 +18,13 @@ To use the component, add a reference to the `PhoneNumberComponentLibrary` and e
 
 
 ### Usage Example
-
+```
 <PhoneNumberInput 
     @bind-PhoneNumber="userPhone" 
     @bind-SelectedCountry="userCountry"
     IncludeContinentSelect="true"
     IsRequired="true" />
+```
 
 ### Component Parameters
 The component supports the following configuration parameters:
