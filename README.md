@@ -43,3 +43,8 @@ The component supports the following configuration parameters:
 
 ### 📄 License
 This project is licensed under the **CC0-1.0** license (Public Domain). Feel free to use, modify, and distribute the code without any restrictions.
+
+## 📧 Contact
+
+If you have any questions, encounter issues, or need assistance with the component, 
+feel free to reach out via email: **[periczeljkosmederevo@yahoo.com](mailto:periczeljkosmederevo@yahoo.com)**.
