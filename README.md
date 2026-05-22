@@ -26,6 +26,9 @@ To use the component, add a reference to the `PhoneNumberComponentLibrary` and e
     IsRequired="true" />
 ```
 
+![Opis komponente](Screenshots/screenshot 1.png)
+![Opis komponente](Screenshots/screenshot 2.png)
+
 ### Component Parameters
 The component supports the following configuration parameters:
 - **IncludeContinentSelect** (bool, default: true): Shows or hides the continent dropdown.

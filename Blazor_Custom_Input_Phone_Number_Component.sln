@@ -18,6 +18,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Screenshots", "Screenshots", "{93904C2E-C7CA-4043-95E6-C6CCFED05CBB}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\peric\OneDrive\Desktop\Screenshot 1.png = C:\Users\peric\OneDrive\Desktop\Screenshot 1.png
+		C:\Users\peric\OneDrive\Desktop\Screenshot 2.png = C:\Users\peric\OneDrive\Desktop\Screenshot 2.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
