@@ -42,7 +42,7 @@ The component supports the following configuration parameters:
 * **/PhoneNumberComponentTestApp**: Blazor application for testing and demonstrating the component functionality.
 
 ### 📄 License
-This project is licensed under the **CC0-1.0** license (Public Domain). Feel free to use, modify, and distribute the code without any restrictions.
+This project is licensed under the [CC0-1.0 license (Public Domain)](LICENSE.txt). Feel free to use, modify, and distribute the code without any restrictions.
 
 ## 📧 Contact
 
