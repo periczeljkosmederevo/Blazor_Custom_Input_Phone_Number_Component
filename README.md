@@ -35,13 +35,27 @@ To use the component, add a reference to the `PhoneNumberComponentLibrary` and e
 
 ### Component Parameters
 The component supports the following configuration parameters:
-- **IncludeContinentSelect** (bool, default: true): Shows or hides the continent dropdown.
-- **IncludeCountrySelect** (bool, default: true): Shows or hides the country dropdown.
-- **IsRequired** (bool?, default: false): Enables visual validation by applying red/green borders based on input state.
-- **Placeholder** (string, default: "Enter phone number"): Custom text displayed when the input is empty.
-- **AutoComplete** (string, default: "off"): Sets the standard HTML autocomplete attribute.
-- **ShowFlags** (bool, default: true): Enables or disables the rendering of country flags in the dropdown and selection buttons.
-- **FlagFormat** (FlagFormatEnum, default: FlagFormatEnum.Square1x1): Specifies the aspect ratio for the displayed flags.
+
+* **IncludeContinentSelect** (bool, default: true): Shows or hides the continent dropdown.
+* **IncludeCountrySelect** (bool, default: true): Shows or hides the country dropdown.
+* **IsRequired** (bool?, default: false): Enables visual validation by applying red/green borders based on input state.
+* **Placeholder** (string, default: "Enter phone number"): Custom text displayed when the input is empty.
+* **AutoComplete** (string, default: "off"): Sets the standard HTML autocomplete attribute.
+* **ShowFlags** (bool, default: true): Enables or disables the rendering of country flags in the dropdown and selection buttons.
+* **FlagFormat** (FlagFormatEnum, default: FlagFormatEnum.Rectangle4x3): Specifies the aspect ratio for the displayed flags.
+* **FlagWidth** (string, default: "20px"): Custom CSS width for the rendered flag image.
+* **FlagHeight** (string, default: "15px"): Custom CSS height for the rendered flag image.
+* **ContinentMinWidth** (string, default: "4rem"): Minimum CSS width constraint for the continent dropdown button.
+* **ContinentMaxWidth** (string?, default: null): Maximum CSS width constraint for the continent dropdown button.
+* **CountryMinWidth** (string, default: "4rem"): Minimum CSS width constraint for the country dropdown button.
+* **CountryMaxWidth** (string?, default: null): Maximum CSS width constraint for the country dropdown button.
+* **InputMinWidth** (string?, default: null): Minimum CSS width constraint for the phone number input field.
+* **InputMaxWidth** (string?, default: null): Maximum CSS width constraint for the phone number input field.
+* **CustomContainerClass** (string?, default: null): Custom CSS classes for the main wrapper container element.
+* **CustomContinentButtonClass** (string?, default: null): Custom CSS classes for the continent selection dropdown button.
+* **CustomCountryButtonClass** (string?, default: null): Custom CSS classes for the country selection dropdown button.
+* **CustomInputClass** (string?, default: null): Custom CSS classes for the phone number text input field.
+* **CustomDropdownMenuClass** (string?, default: null): Custom CSS classes for the dropdown menus.
 
 ### 📂 Project Structure
 * **/PhoneNumberComponentLibrary**: Source code for the component, models, enum definitions, and local static assets (wwwroot/flags).
