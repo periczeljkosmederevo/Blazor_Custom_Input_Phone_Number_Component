@@ -11,6 +11,7 @@ making data entry simpler and more intuitive for end users.
 * **Customizable Validation:** Visual feedback through styled input borders based on the `required` status.
 * **Modularity:** Option to include or exclude dropdown menus via component parameters.
 * **Modern UI:** Built on the Bootstrap 5 framework for a responsive and consistent look.
+* **Local SVG Flags Integration:** Built-in high-quality local SVG flag support with customizable aspect ratios (`1x1` square and `4x3` rectangular formats).
 
 ## 🛠️ Installation and API Reference
 
@@ -23,7 +24,9 @@ To use the component, add a reference to the `PhoneNumberComponentLibrary` and e
     @bind-PhoneNumber="userPhone" 
     @bind-SelectedCountry="userCountry"
     IncludeContinentSelect="true"
-    IsRequired="true" />
+    IsRequired="true"
+    ShowFlags="true" 
+    FlagFormat="FlagFormatEnum.Rectangle4x3"/>
 ```
 
 ![Screenshot 1](Screenshots/Screenshot_1.png)
@@ -36,6 +39,8 @@ The component supports the following configuration parameters:
 - **IsRequired** (bool?, default: false): Enables visual validation by applying red/green borders based on input state.
 - **Placeholder** (string, default: "Enter phone number"): Custom text displayed when the input is empty.
 - **AutoComplete** (string, default: "off"): Sets the standard HTML autocomplete attribute.
+- **ShowFlags** (bool, default: true): Enables or disables the rendering of country flags in the dropdown and selection buttons.
+- **FlagFormat** (FlagFormatEnum, default: FlagFormatEnum.Square1x1): Specifies the aspect ratio for the displayed flags.
 
 ### 📂 Project Structure
 * **/PhoneNumberComponentLibrary**: Source code for the component, models, and Enum extensions.
