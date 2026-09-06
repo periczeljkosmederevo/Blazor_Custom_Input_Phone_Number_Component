@@ -207,22 +207,27 @@ public partial class PhoneNumberInput : ComponentBase
     /// <summary>
     /// Refreshes the local country collection based on the current continent filter configuration.
     /// </summary>
+    /// <summary>
+    /// Refreshes the local country collection based on the current continent filter configuration and sorts them alphabetically.
+    /// </summary>
     private void UpdateFilteredCountries()
     {
         if (IncludeContinentSelect && SelectedContinent != null)
         {
-            // Filter countries by selected continent
+            // Filter countries by selected continent and sort alphabetically by name
             FilteredCountries = CountryData.GetCountries()
                                            .Where(c => c.ContinentId == (int)SelectedContinent)
+                                           .OrderBy(c => c.CountryName)
                                            .ToList();
         }
         else
         {
-            // Show all countries if continent filtering is not applied
-            FilteredCountries = CountryData.GetCountries();
+            // Show all countries if continent filtering is not applied, sorted alphabetically by name
+            FilteredCountries = CountryData.GetCountries()
+                                           .OrderBy(c => c.CountryName)
+                                           .ToList();
         }
     }
-
     #endregion
 
     #region Phone Number
