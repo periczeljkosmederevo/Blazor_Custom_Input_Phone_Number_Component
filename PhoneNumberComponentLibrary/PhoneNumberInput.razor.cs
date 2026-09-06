@@ -1,9 +1,20 @@
 ﻿using Microsoft.AspNetCore.Components;
+using PhoneNumberComponentLibrary.Enums;
 
 namespace PhoneNumberComponentLibrary;
 
 public partial class PhoneNumberInput : ComponentBase
 {
+    #region Flags Configuration
+    [Parameter]
+    public bool ShowFlags { get; set; } = true;
+
+    [Parameter]
+    public FlagFormatEnum FlagFormat { get; set; } = FlagFormatEnum.Rectangle4x3;
+
+    public string? SelectedCountryFlagPath => SelectedCountry?.FlagPath(FlagFormat);
+    #endregion
+
     #region Continent Select
     [Parameter]
     public bool IncludeContinentSelect { get; set; } = true;

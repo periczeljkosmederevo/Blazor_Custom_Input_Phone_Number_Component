@@ -1,4 +1,4 @@
-﻿<div class="input-group">
+﻿<div class="input-group phone-input-group">
     @if (IncludeCountrySelect)
     {
         @if (IncludeContinentSelect)
@@ -8,8 +8,7 @@
                 <button class="btn btn-outline-secondary dropdown-toggle @Border"
                         type="button"
                         data-bs-toggle="dropdown"
-                        aria-expanded="false" 
-                        style="min-width: 10rem !important;">
+                        aria-expanded="false">
                     @if (SelectedContinent != null)
                     {
                         @SelectedContinent.GetDescription()
@@ -35,27 +34,34 @@
 
         <!-- Dropdown for selecting Country based on Continent -->
         <div class="dropdown">
-            <button class="btn btn-outline-secondary dropdown-toggle @Border"
+            <button class="btn btn-outline-secondary dropdown-toggle @Border country-btn"
                     type="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    style="min-width: 10rem !important;">
+                    aria-expanded="false">
                 @if (SelectedCountry != null)
                 {
-                    @SelectedCountry.CountryName
+                    @if (ShowFlags && !string.IsNullOrEmpty(SelectedCountry.CountryIsoAlpha2))
+                    {
+                        <img src="@SelectedCountry.FlagPath(FlagFormat)" alt="" class="dropdown-flag" />
+                    }
+                    <span>@SelectedCountry.CountryName</span>
                 }
                 else
                 {
                     <span>Select Country</span>
                 }
             </button>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu dropdown-menu-scrollable">
                 @foreach (var country in FilteredCountries)
                 {
                     <li>
-                        <a class="dropdown-item" 
+                        <a class="dropdown-item dropdown-item-custom"
                            href="#" @onclick="() => OnCountrySelect(country)">
-                            @country.CountryName (@country.CountryCallCode)
+                            @if (ShowFlags && !string.IsNullOrEmpty(country.CountryIsoAlpha2))
+                            {
+                                <img src="@country.FlagPath(FlagFormat)" alt="" class="dropdown-flag" />
+                            }
+                            <span>@country.CountryName (@country.CountryCallCode)</span>
                         </a>
                     </li>
                 }
@@ -66,7 +72,7 @@
     <!-- Input for entering the phone number -->
     <input id="phone-number"
            type="tel"
-           class="form-control @Border" 
+           class="form-control @Border"
            placeholder="@(RequiredPlaceholder ? RequiredValueValidationMessage : Placeholder)"
            autocomplete="@AutoComplete"
            value="@PhoneNumber"

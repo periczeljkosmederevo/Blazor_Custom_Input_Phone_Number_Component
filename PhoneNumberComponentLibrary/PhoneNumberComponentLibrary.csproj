@@ -9,13 +9,7 @@
 		<FileVersion>10.0.0</FileVersion>
 		<Authors>Perić Željko, periczeljkosmederevo@yahoo.com</Authors>
 		<Company>periczeljkosmederevo@yahoo.com</Company>
-		<Description>Reusable Blazor component for phone number input with continent/country filtering.
-
-Major upgrade to .NET 10. 
-
-BREAKING CHANGE: 
-- This version targets .NET 10 and drops support for .NET 8. 
-- Projects consuming this package must update their target framework to .NET 10 before upgrading the package.</Description>
+		<Description>Reusable Blazor component for phone number input with continent/country filtering.</Description>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Copyright>Copyright © 2026</Copyright>
 		<Title>Custom Blazor Phone Number Input Component</Title>
@@ -24,10 +18,12 @@ BREAKING CHANGE:
 		<RepositoryUrl>https://github.com/periczeljkosmederevo/Blazor_Custom_Input_Phone_Number_Component</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageProjectUrl>https://github.com/periczeljkosmederevo/Blazor_Custom_Input_Phone_Number_Component</PackageProjectUrl>
-		<PackageReleaseNotes>Major upgrade to .NET 10. 
+		<PackageReleaseNotes>- Major upgrade to .NET 10.
+- Added support for local SVG country flags in the dropdown and selection buttons (supports 1x1 and 4x3 flag sets).
+- Added 'ShowFlags' parameter to easily toggle flag visibility on or off.
 
-BREAKING CHANGE: 
-- This version targets .NET 10 and drops support for .NET 8. 
+BREAKING CHANGE:
+- This version targets .NET 10 and drops support for .NET 8.
 - Projects consuming this package must update their target framework to .NET 10 before upgrading the package.</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 	</PropertyGroup>
