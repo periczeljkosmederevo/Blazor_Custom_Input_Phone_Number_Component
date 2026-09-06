@@ -43,7 +43,7 @@ The component supports the following configuration parameters:
 - **FlagFormat** (FlagFormatEnum, default: FlagFormatEnum.Square1x1): Specifies the aspect ratio for the displayed flags.
 
 ### 📂 Project Structure
-* **/PhoneNumberComponentLibrary**: Source code for the component, models, and Enum extensions.
+* **/PhoneNumberComponentLibrary**: Source code for the component, models, enum definitions, and local static assets (wwwroot/flags).
 * **/PhoneNumberComponentTestApp**: Blazor application for testing and demonstrating the component functionality.
 
 ### 📄 License
