@@ -1,15 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
+		<TargetFramework>net10.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>PhoneNumberInput.Blazor</PackageId>
-		<Version>1.0.0</Version>
-		<FileVersion>1.0.0</FileVersion>
+		<Version>10.0.0</Version>
+		<FileVersion>10.0.0</FileVersion>
 		<Authors>Perić Željko, periczeljkosmederevo@yahoo.com</Authors>
 		<Company>periczeljkosmederevo@yahoo.com</Company>
-		<Description>Reusable Blazor component for phone number input with continent/country filtering.</Description>
+		<Description>Reusable Blazor component for phone number input with continent/country filtering.
+
+Major upgrade to .NET 10. 
+
+BREAKING CHANGE: 
+- This version targets .NET 10 and drops support for .NET 8. 
+- Projects consuming this package must update their target framework to .NET 10 before upgrading the package.</Description>
 		<PackageLicenseExpression>CC0-1.0</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Copyright>Copyright © 2026</Copyright>
@@ -19,7 +25,11 @@
 		<RepositoryUrl>https://github.com/periczeljkosmederevo/Blazor_Custom_Input_Phone_Number_Component</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageProjectUrl>https://github.com/periczeljkosmederevo/Blazor_Custom_Input_Phone_Number_Component</PackageProjectUrl>
-		<PackageReleaseNotes>Initial release of the Blazor Phone Number Input component with continent and country filtering features.</PackageReleaseNotes>
+		<PackageReleaseNotes>Major upgrade to .NET 10. 
+
+BREAKING CHANGE: 
+- This version targets .NET 10 and drops support for .NET 8. 
+- Projects consuming this package must update their target framework to .NET 10 before upgrading the package.</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -27,7 +37,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.10" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
