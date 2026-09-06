@@ -5,6 +5,17 @@ namespace PhoneNumberComponentLibrary;
 
 public partial class PhoneNumberInput : ComponentBase
 {
+    #region Custom CSS Parameters
+    [Parameter]
+    public string? CustomClass { get; set; }
+
+    [Parameter]
+    public string? CustomButtonClass { get; set; }
+
+    [Parameter]
+    public string? CustomInputClass { get; set; }
+    #endregion
+
     #region Flags Configuration
     [Parameter]
     public bool ShowFlags { get; set; } = true;

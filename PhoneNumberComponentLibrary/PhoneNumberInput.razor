@@ -1,11 +1,12 @@
-﻿<div class="input-group phone-input-group">
+﻿<div class="input-group phone-input-group @CustomClass">
     @if (IncludeCountrySelect)
     {
         @if (IncludeContinentSelect)
         {
             <!-- Dropdown for selecting Continent -->
             <div class="dropdown">
-                <button class="btn btn-outline-secondary dropdown-toggle @Border dropdown-fixed-btn"
+                <button class="btn btn-outline-secondary dropdown-toggle
+                    @Border dropdown-fixed-btn @CustomButtonClass"
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -34,7 +35,8 @@
 
         <!-- Dropdown for selecting Country based on Continent -->
         <div class="dropdown">
-            <button class="btn btn-outline-secondary dropdown-toggle @Border dropdown-fixed-btn country-btn"
+            <button class="btn btn-outline-secondary dropdown-toggle
+                @Border dropdown-fixed-btn country-btn @CustomButtonClass"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -72,7 +74,7 @@
     <!-- Input for entering the phone number -->
     <input id="phone-number"
            type="tel"
-           class="form-control @Border"
+           class="form-control @Border @CustomInputClass"
            placeholder="@(RequiredPlaceholder ? RequiredValueValidationMessage : Placeholder)"
            autocomplete="@AutoComplete"
            value="@PhoneNumber"
