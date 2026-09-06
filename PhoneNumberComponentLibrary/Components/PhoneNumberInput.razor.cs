@@ -49,6 +49,12 @@ public partial class PhoneNumberInput : ComponentBase
     [Parameter]
     public FlagFormatEnum FlagFormat { get; set; } = FlagFormatEnum.Rectangle4x3;
 
+    [Parameter]
+    public string FlagWidth { get; set; } = "20px";
+
+    [Parameter]
+    public string FlagHeight { get; set; } = "15px";
+
     public string? SelectedCountryFlagPath => SelectedCountry?.FlagPath(FlagFormat);
     #endregion
 

@@ -3,7 +3,7 @@
     {
         @if (IncludeContinentSelect)
         {
-            <!-- Dropdown za kontinent -->
+            <!-- Dropdown for continent -->
             <div class="dropdown">
                 <button class="btn btn-outline-secondary dropdown-toggle
                     @Border dropdown-fixed-btn continent-btn @CustomContinentButtonClass"
@@ -34,7 +34,7 @@
             </div>
         }
 
-        <!-- Dropdown za državu -->
+        <!-- Dropdown for country -->
         <div class="dropdown">
             <button class="btn btn-outline-secondary dropdown-toggle
                 @Border dropdown-fixed-btn country-btn @CustomCountryButtonClass"
@@ -46,8 +46,9 @@
                 {
                     @if (ShowFlags && !string.IsNullOrEmpty(SelectedCountry.CountryIsoAlpha2))
                     {
-                        <img src="@SelectedCountry.FlagPath(FlagFormat)" alt="" class="dropdown-flag" />
+                        <img src="@SelectedCountry.FlagPath(FlagFormat)" alt="" class="dropdown-flag" style="width: @FlagWidth; height: @FlagHeight;" />
                     }
+
                     <span>@SelectedCountry.CountryName</span>
                 }
                 else
@@ -63,7 +64,7 @@
                            href="#" @onclick="() => OnCountrySelect(country)">
                             @if (ShowFlags && !string.IsNullOrEmpty(country.CountryIsoAlpha2))
                             {
-                                <img src="@country.FlagPath(FlagFormat)" alt="" class="dropdown-flag" />
+                                <img src="@country.FlagPath(FlagFormat)" alt="" class="dropdown-flag" style="width: @FlagWidth; height: @FlagHeight;" />
                             }
                             <span>@country.CountryName (@country.CountryCallCode)</span>
                         </a>
@@ -73,7 +74,7 @@
         </div>
     }
 
-    <!-- Glavno polje za unos telefona -->
+    <!-- Phone number input -->
     <input id="phone-number"
            type="tel"
            class="form-control @Border @CustomInputClass"

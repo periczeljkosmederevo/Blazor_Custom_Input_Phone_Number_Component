@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using PhoneNumberComponentLibrary.Enums
 
 <PageTitle>Home</PageTitle>
 
@@ -18,7 +19,7 @@ Welcome to your new app.
                               @bind-SelectedCountry="@VM.Country"
                               IsRequired="true"
                               ShowFlags="true"
-                              IncludeContinentSelect="false"
+                              IncludeContinentSelect="true"
                               ContinentMinWidth="10rem"
                               CountryMinWidth="10rem"/>
         </div>
