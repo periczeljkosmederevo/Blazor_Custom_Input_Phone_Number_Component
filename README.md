@@ -31,6 +31,7 @@ To use the component, add a reference to the `PhoneNumberComponentLibrary` and e
 
 ![Screenshot 1](Screenshots/Screenshot_1.png)
 ![Screenshot 2](Screenshots/Screenshot_2.png)
+![Screenshot 3](Screenshots/Screenshot_3.png)
 
 ### Component Parameters
 The component supports the following configuration parameters:

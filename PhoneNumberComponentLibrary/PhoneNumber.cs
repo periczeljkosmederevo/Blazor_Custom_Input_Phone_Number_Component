@@ -1,6 +1,4 @@
-﻿using PhoneNumberComponentLibrary;
-
-namespace PhoneNumberComponentTestApp.Pages;
+﻿namespace PhoneNumberComponentLibrary;
 
 public class PhoneNumber
 {

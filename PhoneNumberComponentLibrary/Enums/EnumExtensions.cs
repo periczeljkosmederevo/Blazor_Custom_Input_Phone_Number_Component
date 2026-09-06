@@ -1,4 +1,4 @@
-﻿namespace PhoneNumberComponentLibrary;
+﻿namespace PhoneNumberComponentLibrary.Enums;
 
 using System.ComponentModel;
 using System.Reflection;

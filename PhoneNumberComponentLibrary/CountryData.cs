@@ -1,4 +1,6 @@
-﻿namespace PhoneNumberComponentLibrary
+﻿using PhoneNumberComponentLibrary.Enums;
+
+namespace PhoneNumberComponentLibrary
 {
     public static class CountryData
     {

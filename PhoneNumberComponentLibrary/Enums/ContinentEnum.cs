@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace PhoneNumberComponentLibrary;
+namespace PhoneNumberComponentLibrary.Enums;
 
 public enum ContinentEnum
 {
