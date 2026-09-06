@@ -1,6 +1,7 @@
 ﻿using PhoneNumberComponentLibrary.Enums;
+using PhoneNumberComponentLibrary.Models;
 
-namespace PhoneNumberComponentLibrary
+namespace PhoneNumberComponentLibrary.Data
 {
     public static class CountryData
     {

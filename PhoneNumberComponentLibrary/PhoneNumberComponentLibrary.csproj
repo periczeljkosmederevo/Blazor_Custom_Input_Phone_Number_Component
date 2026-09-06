@@ -21,7 +21,22 @@
 		<PackageReleaseNotes>- Added support for local SVG country flags in the dropdown and selection buttons (supports 1x1 and 4x3 flag sets).
 - Added 'ShowFlags' parameter to easily toggle flag visibility on or off.</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 	</PropertyGroup>
+	<ItemGroup>
+	  <None Include="..\LICENSE.txt">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\TM 500.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 	<ItemGroup>
 		<SupportedPlatform Include="browser" />
@@ -29,17 +44,5 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.11" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<None Include="..\..\..\ArrayIOExtensionsLibProject\ArrayIOExtensionsLib\LICENSE.txt">
-		  <Pack>True</Pack>
-		  <PackagePath>\</PackagePath>
-		</None>
-		<None Include="..\README.md" Pack="true" PackagePath="\" />
-		<None Include="..\TM 500.png">
-		  <Pack>True</Pack>
-		  <PackagePath>\</PackagePath>
-		</None>
 	</ItemGroup>
 </Project>

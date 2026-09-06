@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Components;
+using PhoneNumberComponentLibrary.Data;
 using PhoneNumberComponentLibrary.Enums;
+using PhoneNumberComponentLibrary.Models;
 
-namespace PhoneNumberComponentLibrary;
+namespace PhoneNumberComponentLibrary.Components;
 
 public partial class PhoneNumberInput : ComponentBase
 {

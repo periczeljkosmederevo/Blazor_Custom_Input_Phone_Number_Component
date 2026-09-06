@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components.Forms;
-using PhoneNumberComponentLibrary;
+using PhoneNumberComponentLibrary.Models;
 
 namespace PhoneNumberComponentTestApp.Pages;
 
