@@ -3,35 +3,14 @@
     align-items: stretch;
 }
 
-.country-btn {
+.dropdown-fixed-btn {
     min-width: 10rem !important;
     display: flex;
     align-items: center;
-    gap: 6px;
-}
-
-.dropdown-flag {
-    width: 20px;
-    height: 15px;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.dropdown-item-custom {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.phone-input-group {
-    display: flex;
-    align-items: stretch;
+    justify-content: center;
 }
 
 .country-btn {
-    min-width: 10rem !important;
-    display: flex;
-    align-items: center;
     gap: 6px;
 }
 
