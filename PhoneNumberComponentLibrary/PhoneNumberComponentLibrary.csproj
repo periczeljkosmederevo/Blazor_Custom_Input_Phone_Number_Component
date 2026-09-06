@@ -16,7 +16,6 @@ Major upgrade to .NET 10.
 BREAKING CHANGE: 
 - This version targets .NET 10 and drops support for .NET 8. 
 - Projects consuming this package must update their target framework to .NET 10 before upgrading the package.</Description>
-		<PackageLicenseExpression>CC0-1.0</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Copyright>Copyright © 2026</Copyright>
 		<Title>Custom Blazor Phone Number Input Component</Title>
@@ -30,6 +29,7 @@ BREAKING CHANGE:
 BREAKING CHANGE: 
 - This version targets .NET 10 and drops support for .NET 8. 
 - Projects consuming this package must update their target framework to .NET 10 before upgrading the package.</PackageReleaseNotes>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -41,6 +41,10 @@ BREAKING CHANGE:
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Include="..\..\..\ArrayIOExtensionsLibProject\ArrayIOExtensionsLib\LICENSE.txt">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
 		<None Include="..\README.md" Pack="true" PackagePath="\" />
 		<None Include="..\TM 500.png">
 		  <Pack>True</Pack>
