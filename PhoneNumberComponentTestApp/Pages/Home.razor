@@ -17,7 +17,10 @@ Welcome to your new app.
             <PhoneNumberInput @bind-PhoneNumber="@VM.Number"
                               @bind-SelectedCountry="@VM.Country"
                               IsRequired="true"
-                              ShowFlags="true" />
+                              ShowFlags="true"
+                              IncludeContinentSelect="false"
+                              ContinentMinWidth="10rem"
+                              CountryMinWidth="10rem"/>
         </div>
     </div>
     <br />

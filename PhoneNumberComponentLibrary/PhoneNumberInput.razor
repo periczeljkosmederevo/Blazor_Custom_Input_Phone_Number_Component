@@ -1,14 +1,16 @@
-﻿<div class="input-group phone-input-group @CustomClass">
+﻿<div class="input-group phone-input-group @CustomContainerClass">
     @if (IncludeCountrySelect)
     {
         @if (IncludeContinentSelect)
         {
-            <!-- Dropdown for selecting Continent -->
+            <!-- Dropdown za kontinent -->
             <div class="dropdown">
-                <button class="btn btn-outline-secondary dropdown-toggle @Border dropdown-fixed-btn continent-btn @CustomButtonClass"
+                <button class="btn btn-outline-secondary dropdown-toggle
+                    @Border dropdown-fixed-btn continent-btn @CustomContinentButtonClass"
                         type="button"
                         data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                        aria-expanded="false"
+                        style="min-width: @ContinentMinWidth; @(!string.IsNullOrEmpty(ContinentMaxWidth) ? $"max-width: {ContinentMaxWidth};" : "")">
                     @if (SelectedContinent != null)
                     {
                         @SelectedContinent.GetDescription()
@@ -18,7 +20,7 @@
                         <span>Select Continent</span>
                     }
                 </button>
-                <ul class="dropdown-menu dropdown-menu-scrollable">
+                <ul class="dropdown-menu dropdown-menu-scrollable @CustomDropdownMenuClass">
                     @foreach (var continent in Enum.GetValues(typeof(ContinentEnum)).Cast<ContinentEnum>())
                     {
                         <li>
@@ -32,12 +34,14 @@
             </div>
         }
 
-        <!-- Dropdown for selecting Country based on Continent -->
+        <!-- Dropdown za državu -->
         <div class="dropdown">
-            <button class="btn btn-outline-secondary dropdown-toggle @Border dropdown-fixed-btn country-btn @CustomButtonClass"
+            <button class="btn btn-outline-secondary dropdown-toggle
+                @Border dropdown-fixed-btn country-btn @CustomCountryButtonClass"
                     type="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                    aria-expanded="false"
+                    style="min-width: @CountryMinWidth;@(!string.IsNullOrEmpty(CountryMaxWidth) ? $"max-width: {CountryMaxWidth};" : "")">
                 @if (SelectedCountry != null)
                 {
                     @if (ShowFlags && !string.IsNullOrEmpty(SelectedCountry.CountryIsoAlpha2))
@@ -51,7 +55,7 @@
                     <span>Select Country</span>
                 }
             </button>
-            <ul class="dropdown-menu dropdown-menu-scrollable">
+            <ul class="dropdown-menu dropdown-menu-scrollable @CustomDropdownMenuClass">
                 @foreach (var country in FilteredCountries)
                 {
                     <li>
@@ -69,7 +73,7 @@
         </div>
     }
 
-    <!-- Input for entering the phone number -->
+    <!-- Glavno polje za unos telefona -->
     <input id="phone-number"
            type="tel"
            class="form-control @Border @CustomInputClass"
@@ -77,5 +81,6 @@
            autocomplete="@AutoComplete"
            value="@PhoneNumber"
            required="@ShowStandardRequiredMessage"
+           style="@(!string.IsNullOrEmpty(InputMinWidth) ? $"min-width: {InputMinWidth};" : "") @(!string.IsNullOrEmpty(InputMaxWidth) ? $"max-width: {InputMaxWidth};" : "")"
            @onchange="OnPhoneNumberChange" />
 </div>

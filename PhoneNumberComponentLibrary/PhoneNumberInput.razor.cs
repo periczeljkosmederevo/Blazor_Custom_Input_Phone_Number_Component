@@ -5,15 +5,39 @@ namespace PhoneNumberComponentLibrary;
 
 public partial class PhoneNumberInput : ComponentBase
 {
-    #region Custom CSS Parameters
+    #region Advanced Custom Styling Parameters
     [Parameter]
-    public string? CustomClass { get; set; }
+    public string? CustomContainerClass { get; set; }
 
     [Parameter]
-    public string? CustomButtonClass { get; set; }
+    public string? CustomContinentButtonClass { get; set; }
+
+    [Parameter]
+    public string? CustomCountryButtonClass { get; set; }
 
     [Parameter]
     public string? CustomInputClass { get; set; }
+
+    [Parameter]
+    public string? CustomDropdownMenuClass { get; set; }
+
+    [Parameter]
+    public string ContinentMinWidth { get; set; } = "4rem";
+
+    [Parameter]
+    public string? ContinentMaxWidth { get; set; }
+
+    [Parameter]
+    public string CountryMinWidth { get; set; } = "4rem";
+
+    [Parameter]
+    public string? CountryMaxWidth { get; set; }
+
+    [Parameter]
+    public string? InputMinWidth { get; set; }
+
+    [Parameter]
+    public string? InputMaxWidth { get; set; }
     #endregion
 
     #region Flags Configuration
