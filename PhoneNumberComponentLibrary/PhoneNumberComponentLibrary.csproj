@@ -22,6 +22,7 @@
 - Added 'ShowFlags' parameter to easily toggle flag visibility on or off.</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageTags>blazor; component; phone; input; validation; csharp</PackageTags>
 	</PropertyGroup>
 	<ItemGroup>
 	  <None Include="..\LICENSE.txt">
